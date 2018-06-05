@@ -121,7 +121,7 @@ Authy.prototype.phones = function() {
                 via: params.via || "sms",
                 locale: params.locale,
                 custom_message: params.custom_message,
-                code_length: params.code_length,
+                code_length: params.code_length || 4,
                 custom_code: params.custom_code
             };
 
